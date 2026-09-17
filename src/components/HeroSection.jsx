@@ -4,10 +4,7 @@ import resume from '../assets/resume.pdf';
 
 const HeroSection = () => {
     return (
-        <section
-            className="relative w-full"
-            data-aos="zoom-in-up"
-        >
+        <section className="relative w-full">
 
             <div className="absolute top-0 inset-x-0 h-64 flex items-start">
 
@@ -21,7 +18,7 @@ const HeroSection = () => {
 
                 <div className="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
 
-                    <div className="lg:py-6">
+                    <div className="lg:py-6 hero-content-enter">
 
                         <div className="text-center lg:text-left">
 
@@ -81,13 +78,13 @@ const HeroSection = () => {
 
                     </div>
 
-                    <div className="lg:h-full md:flex">
+                    <div className="lg:h-full md:flex hero-image-enter">
 
                         <div className="flex w-full h-96 min-h-96 lg:min-h-0 lg:w-full lg:h-full items-center relative">
 
                             <div className="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-gradient-to-r opacity-25 from-[#0c64ac] to-primary blur-2xl" />
 
-                            <div className="absolute z-10 p-2 top-1/2 -translate-y-1/2 lg:right-3 md:right-40 sm:right-16 rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] shadow-lg border border-cyan-500 w-64 h-64 md:w-80 md:h-80">
+                            <div className="absolute z-10 p-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:left-auto sm:translate-x-0 sm:right-16 md:right-40 lg:right-3 rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] shadow-lg border border-cyan-500 w-64 h-64 md:w-80 md:h-80">
 
                                 <img
                                     src={hero}
